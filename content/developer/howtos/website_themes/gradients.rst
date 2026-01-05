@@ -39,17 +39,21 @@ Custom
 Add a custom gradient to the Website Builder. This way, the user can easily use them without
 manually recreating them.
 
-.. code-block:: xml
-   :caption: ``/website_airproof/data/gradients.xml``
+.. code-block:: javascript
+   :caption: ``/website_airproof/static/src/builder/airproof_gradients.js``
 
-   <record id="colorpicker" model="ir.ui.view">
-      <field name="key">website_airproof.colorpicker</field>
-      <field name="name">Custom Gradients</field>
-      <field name="type">qweb</field>
-      <field name="inherit_id" ref="web_editor.colorpicker"/>
-      <field name="arch" type="xml">
-         <xpath expr="//div[@data-name='predefined_gradients']/t[@t-set='gradients']" position="after">
-            <t t-set="gradients" t-value="gradients + ['linear-gradient(135deg, rgb(203, 94, 238) 0%, rgb(75, 225, 236) 100%)']" />
-         </xpath>
-      </field>
-   </record>
+   import { patch } from "@web/core/utils/patch";
+   import { ColorPickerGradientTab } from "@html_editor/main/font/color_picker_gradient_tab";
+
+   patch(ColorPickerGradientTab.prototype, {
+       setup() {
+           super.setup();
+           this.DEFAULT_GRADIENT_COLORS = [
+               ...this.DEFAULT_GRADIENT_COLORS,
+               "linear-gradient(135deg, rgb(203, 94, 238) 0%, rgb(75, 225, 236) 100%)",
+           ];
+       },
+   });
+
+.. note::
+   Add the JavaScript file to the `website.website_builder_assets` bundle so the editor loads it.
