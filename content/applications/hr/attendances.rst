@@ -303,6 +303,7 @@ modifications to the entry.
    - :doc:`attendances/check_in_check_out`
    - :doc:`attendances/kiosks`
    - :doc:`attendances/management`
+   - :doc:`attendances/overtime`
    - :doc:`attendances/hardware`
    - :doc:`attendances/attendance_reporting`
 
@@ -312,5 +313,6 @@ modifications to the entry.
    attendances/check_in_check_out
    attendances/kiosks
    attendances/management
+   attendances/overtime
    attendances/hardware
    attendances/attendance_reporting
