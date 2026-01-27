@@ -31,7 +31,7 @@
 # Fernanda Alvarez, 2024
 # "Tiffany Chang (tic)" <tic@odoo.com>, 2025.
 # "Fernanda Alvarez (mfar)" <mfar@odoo.com>, 2025, 2026.
-# "Patricia Gutiérrez (pagc)" <pagc@odoo.com>, 2025.
+# "Patricia Gutiérrez (pagc)" <pagc@odoo.com>, 2025, 2026.
 # Weblate <noreply-mt-weblate@weblate.org>, 2025.
 #
 # Translators:
@@ -41,8 +41,8 @@ msgstr ""
 "Project-Id-Version: Odoo 18.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-22 18:30+0000\n"
-"PO-Revision-Date: 2026-01-26 23:21+0000\n"
-"Last-Translator: \"Fernanda Alvarez (mfar)\" <mfar@odoo.com>\n"
+"PO-Revision-Date: 2026-01-27 23:21+0000\n"
+"Last-Translator: \"Patricia Gutiérrez (pagc)\" <pagc@odoo.com>\n"
 "Language-Team: Spanish (Latin America) <https://translate.odoo.com/projects/"
 "odoo-19-doc/finance/es_419/>\n"
 "Language: es_419\n"
@@ -5740,7 +5740,7 @@ msgstr "Basado en"
 
 #: ../../content/applications/finance/accounting/customer_invoices/deferred_revenues.rst:44
 msgid "There are three ways to calculate the deferred revenue recognition:"
-msgstr ""
+msgstr "Hay tres formas de calcular el reconocimiento de ingresos diferidos:"
 
 #: ../../content/applications/finance/accounting/customer_invoices/deferred_revenues.rst:46
 #: ../../content/applications/finance/accounting/vendor_bills/deferred_expenses.rst:46
@@ -5748,6 +5748,8 @@ msgid ""
 ":guilabel:`Days`: The total amount is divided equally by the total number of "
 "days in the period, inclusive of the start and end dates."
 msgstr ""
+":guilabel:`Días`: La cantidad total se divide en partes iguales entre el "
+"número de días en el periodo, incluyendo las fechas de inicio y fin."
 
 #: ../../content/applications/finance/accounting/customer_invoices/deferred_revenues.rst:48
 #: ../../content/applications/finance/accounting/vendor_bills/deferred_expenses.rst:48
@@ -5756,6 +5758,9 @@ msgid ""
 "total amount, regardless of the actual number of days in that month "
 "(standardized basis)."
 msgstr ""
+":guilabel:`Meses`: Cada mes completo representa una proporción igual de la "
+"cantidad total, sin importar el número real de días en ese mes "
+"(este es el comportamiento estándar)."
 
 #: ../../content/applications/finance/accounting/customer_invoices/deferred_revenues.rst:50
 #: ../../content/applications/finance/accounting/vendor_bills/deferred_expenses.rst:50
@@ -5764,6 +5769,9 @@ msgid ""
 "However, the final month is only considered full if the period extends to "
 "the very last day of that month."
 msgstr ""
+":guilabel:`Meses completos`: Cualquier mes que haya empezado se trata como "
+"si fuese un mes completo. Sin embargo, el mes final solo se considera "
+"completo si el periodo se extiende hasta el último día el último mes."
 
 #: ../../content/applications/finance/accounting/customer_invoices/deferred_revenues.rst:53
 msgid "Suppose an invoice of $1200 must be deferred over 12 months."
@@ -5819,6 +5827,11 @@ msgid ""
 "revenue entries are posted from the invoice date and are displayed in the "
 "report accordingly."
 msgstr ""
+"Asegúrate de que el campo :guilabel:`Fecha diferida` sea visible en la "
+"pestaña :guilabel:`Líneas de la factura`. En la mayoría de los casos, el "
+"inicio del periodo diferido debe ser el mismo mes que la :guilabel:`Fecha de "
+"la factura`. Los asientos de ingresos diferidos se publican a partir de la "
+"fecha de la factura, por lo tanto, se muestran en el reporte."
 
 #: ../../content/applications/finance/accounting/customer_invoices/deferred_revenues.rst:77
 msgid ""
@@ -5949,7 +5962,7 @@ msgstr ""
 
 #: ../../content/applications/finance/accounting/customer_invoices/deferred_revenues.rst:130
 msgid "There are three invoices deferred based on :guilabel:`Months`:"
-msgstr ""
+msgstr "Hay tres facturas diferidas según los :guilabel:`Meses`:"
 
 #: ../../content/applications/finance/accounting/customer_invoices/deferred_revenues.rst:132
 msgid "Invoice A: $1200 to be deferred from 01/01/2023 to 12/31/2023"
@@ -5964,6 +5977,8 @@ msgid ""
 "Invoice C: $600 to be deferred in a future period (it will appear on "
 "the :guilabel:`Not Started` column)"
 msgstr ""
+"Factura C: $600 que se deben diferir en un periodo futuro "
+"(aparecerá en la columna :guilabel:`Sin empezar`)"
 
 #: ../../content/applications/finance/accounting/customer_invoices/deferred_revenues.rst:152
 #: ../../content/applications/finance/accounting/vendor_bills/deferred_expenses.rst:152
@@ -5990,12 +6005,16 @@ msgid ""
 "Line 1: Income account -1200 -600 -600 = **-2400** (cancelling the total of "
 "all invoices)"
 msgstr ""
+"Línea 1: Cuenta de ingresos -1200 -600 -600 = **-2400** "
+"(cancelando el total de todas las facturas)"
 
 #: ../../content/applications/finance/accounting/customer_invoices/deferred_revenues.rst:144
 msgid ""
 "Line 2: Income account 100 + 50 = **150** (recognizing 1/12 of invoice A and "
 "invoice B)"
 msgstr ""
+"Línea 2: Cuenta de ingresos 100 + 50 = **150** "
+"(reorganiza 1/12 de la factura A y la factura B)"
 
 #: ../../content/applications/finance/accounting/customer_invoices/deferred_revenues.rst:145
 #: ../../content/applications/finance/accounting/vendor_bills/deferred_expenses.rst:145
@@ -6003,6 +6022,8 @@ msgid ""
 "Line 3: Deferred account 2400 - 150 = **2250** (amount that has yet to be "
 "deferred later on)"
 msgstr ""
+"Línea 3: Cuenta diferida 2400 - 150 = **2250** "
+"(monto que se debe diferir después)"
 
 #: ../../content/applications/finance/accounting/customer_invoices/deferred_revenues.rst:148
 #: ../../content/applications/finance/accounting/vendor_bills/deferred_expenses.rst:148
@@ -6012,16 +6033,16 @@ msgstr ""
 
 #: ../../content/applications/finance/accounting/customer_invoices/deferred_revenues.rst:150
 msgid "Line 1: Income account **2400**"
-msgstr ""
+msgstr "Línea 1: Cuenta de ingresos **2400**"
 
 #: ../../content/applications/finance/accounting/customer_invoices/deferred_revenues.rst:151
 msgid "Line 3: Income account **-150**"
-msgstr ""
+msgstr "Línea 3: Cuenta de ingresos **-150**"
 
 #: ../../content/applications/finance/accounting/customer_invoices/deferred_revenues.rst:152
 #: ../../content/applications/finance/accounting/vendor_bills/deferred_expenses.rst:152
 msgid "Line 2: Deferred account **-2250**"
-msgstr ""
+msgstr "Línea 2: Cuenta diferida **-2250**"
 
 #: ../../content/applications/finance/accounting/customer_invoices/deferred_revenues.rst:165
 #: ../../content/applications/finance/accounting/vendor_bills/deferred_expenses.rst:165
@@ -63248,6 +63269,12 @@ msgid ""
 "all invoices from that sales journal, as well as :ref:`global invoices <l10n/"
 "mx/global-invoice>`, use the correct zipcode when generating the CFDI."
 msgstr ""
+"El módulo :guilabel:`EDI para México (Funciones avanzadas)` "
+"(`l10n_mx_edi_extended`) debe estar instalado en la base de datos para "
+"completar el campo :guilabel:`Dirección de emisión` en el diario de ventas. "
+"Esto garantiza que todas las facturas de ese diario de ventas, así como las "
+":ref:`facturas globales <l10n/mx/global-invoice>`, usen el código postal "
+"correcto al generar el CFDI."
 
 #: ../../content/applications/finance/fiscal_localizations/mexico.rst:548
 msgid ""
@@ -63255,6 +63282,10 @@ msgid ""
 "system parameter must be created to ensure the correct time zone is applied "
 "when invoicing, as the user's time zone is used by default."
 msgstr ""
+"Para facturar dentro de una empresa en distintas zonas horarias con el mismo "
+"usuario es necesario crear un parámetro del sistema para garantizar que se "
+"aplique la zona horaria correcta al facturar, ya que el sistema usa la zona "
+"horaria del usuario de forma predeterminada."
 
 #: ../../content/applications/finance/fiscal_localizations/mexico.rst:552
 msgid ""
@@ -63264,6 +63295,11 @@ msgid ""
 "`l10n_mx_edi_tz_XX` where `XX` is the ID of the journal, and set the desired "
 "time zone as the value, for example, “America/Tijuana”."
 msgstr ""
+"Para ello, activa el :doc:`modo de desarrollador <../../general/"
+"developer_mode>` y ve a :menuselection:`Ajustes --> Técnico --> Parámetros "
+"del sistema`. Haz clic en :guilabel:`Nuevo` para crear un nuevo parámetro "
+"con la clave `l10n_mx_edi_tz_XX`, donde `XX` es el ID del diario, y define "
+"la zona horaria deseada como valor, por ejemplo, \"América/Tijuana\"."
 
 #: ../../content/applications/finance/fiscal_localizations/mexico.rst:565
 msgid "Payment policy"
@@ -64372,14 +64408,20 @@ msgid ""
 "Invoice Serie` field can be found within the :guilabel:`Service Tax "
 "Administration (SAT)` section."
 msgstr ""
+"La :guilabel:`serie de la factura global` es específica de cada sucursal o "
+"empresa y se usa para definir la secuencia de facturas globales. Para "
+"configurarla, ve a :menuselection:`Contabilidad --> Configuración --> "
+"Ajustes` y dirígete a la sección :guilabel:`Facturación electrónica MX`. El "
+"campo :guilabel:`Serie de la factura global` aparece dentro de la sección "
+":guilabel:`Servicio de Administración Tributaria (SAT)`."
 
 #: ../../content/applications/finance/fiscal_localizations/mexico.rst:None
 msgid "Accounting setting with an MX company."
-msgstr ""
+msgstr "Ajustes de contabilidad con una empresa de MX."
 
 #: ../../content/applications/finance/fiscal_localizations/mexico.rst:1053
 msgid "The default sequence for every company/branch is `GINV/`"
-msgstr ""
+msgstr "La secuencia predeterminada para cada empresa/sucursal es `GINV/`."
 
 #: ../../content/applications/finance/fiscal_localizations/mexico.rst:1056
 msgid "Sales flow"
@@ -64391,6 +64433,9 @@ msgid ""
 "Configuration --> Journals` to maintain a separate sequence that is used for "
 "global invoices, which function as orders when they are created."
 msgstr ""
+"Primero, crea un diario dedicado en :menuselection:`Contabilidad --> "
+"Configuración --> Diarios` para mantener una secuencia independiente que se "
+"use para facturas globales, que funcionan como órdenes cuando las creas."
 
 #: ../../content/applications/finance/fiscal_localizations/mexico.rst:1062
 msgid ""
@@ -70563,6 +70608,8 @@ msgid ""
 "The following modules related to the Saudi Arabian localization are "
 "available:"
 msgstr ""
+"Están disponibles los siguientes módulos relacionados con la localización de "
+"Arabia Saudita:"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:19
 msgid "Saudi Arabia - Accounting"
@@ -70577,10 +70624,13 @@ msgid ""
 "Default :ref:`fiscal localization package <fiscal_localizations/packages>` "
 "for Saudi Arabia with Phase 1 QR code support."
 msgstr ""
+"El paquete de :ref:`localización fiscal <fiscal_localizations/packages>` "
+"predeterminado para Arabia Saudita con compatibilidad con código QR de la "
+"Fase 1."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:23
 msgid "Saudi Arabia - Accounting Reports"
-msgstr ""
+msgstr "Arabia Saudita - Reportes contables"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:24
 msgid "`l10n_sa_reports`"
@@ -70588,7 +70638,7 @@ msgstr "`l10n_sa_reports`"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:25
 msgid "Accounting reports for Saudi Arabia"
-msgstr ""
+msgstr "Reportes contables para Arabia Saudita"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:26
 msgid "Saudi Arabia - E-invoicing"
@@ -70601,6 +70651,8 @@ msgstr "`l10n_sa_edi`"
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:28
 msgid "Enables ZATCA Phase 2 API integration for e-invoicing compliance."
 msgstr ""
+"Habilita la integración con la API de ZATCA Fase 2 para cumplir con la "
+"facturación electrónica."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:29
 msgid "Saudi Arabia - E-invoicing (Simplified)"
@@ -70624,25 +70676,27 @@ msgstr "`l10n_sa_pos`"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:34
 msgid "Adds compliance fields and behavior for PoS invoices."
-msgstr ""
+msgstr "Agrega campos y comportamiento de cumplimiento para facturas de PdV."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:35
 msgid "Saudi Arabia - Withholding Tax"
-msgstr ""
+msgstr "Arabia Saudita - Retención de impuestos"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:36
 msgid "`l10n_sa_withholding_tax`"
-msgstr ""
+msgstr "`l10n_sa_withholding_tax`"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:37
 msgid "Forces the installation of the Withholding Tax on Payment module."
-msgstr ""
+msgstr "Fuerza la instalación del módulo Retención de impuestos en pagos."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:44
 msgid ""
 ":doc:`Saudi Arabia Payroll localization documentation <../../hr/payroll/"
 "payroll_localizations/saudi_arabia>`"
 msgstr ""
+":doc:`Documentación sobre la localización de nómina de Arabia Saudita <../../"
+"hr/payroll/payroll_localizations/saudi_arabia>`"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:51
 msgid ""
@@ -70651,94 +70705,134 @@ msgid ""
 "fiscal positions, reporting, and a predefined chart of accounts tailored to "
 "Saudi Arabia's standards."
 msgstr ""
+"El paquete de localización de Arabia Saudita garantiza el cumplimiento de "
+"las normativas fiscales y contables de Arabia Saudita. Incluye herramientas "
+"para gestionar impuestos, posiciones fiscales, reportes y un plan de cuentas "
+"predefinido adaptado a los estándares de Arabia Saudita."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:55
 msgid ""
 "The Saudi Arabian localization package provides the following key features "
 "to ensure compliance with local fiscal and accounting regulations:"
 msgstr ""
+"El paquete de localización de Arabia Saudita ofrece las siguientes funciones "
+"clave para garantizar el cumplimiento de las normativas fiscales y contables "
+"locales:"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:58
 msgid ""
 ":doc:`../accounting/get_started/chart_of_accounts`: a predefined structure "
 "aligned with Saudi Arabian regulations"
 msgstr ""
+":doc:`../accounting/get_started/chart_of_accounts`: Una estructura "
+"predefinida alineada con las normativas de Arabia Saudita."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:60
 msgid ""
 ":ref:`localizations/saudi-arabia/taxes`: preconfigured tax rates, including "
 "standard 15% VAT, zero-rated, and exempt options"
 msgstr ""
+":ref:`localizations/saudi-arabia/taxes`: Tasas de impuestos preconfiguradas, "
+"que incluyen el IVA estándar del 15%, tasa cero y opciones exentas."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:64
 msgid ""
 ":ref:`Withholding taxes <localizations/saudi-arabia/withholding-taxes>`: "
 "predefined withholding tax rules for applicable service categories"
 msgstr ""
+":ref:`Impuestos de retención <localizations/saudi-arabia/withholding-taxes>`:"
+" Reglas de retención predefinidas para categorías de servicios aplicables."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:66
 msgid ":ref:`localizations/saudi-arabia/tax-reporting`: automated tax reports"
 msgstr ""
+":ref:`localizations/saudi-arabia/tax-reporting`: Reportes de impuestos "
+"automatizados."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:67
 msgid ""
 ":ref:`E-invoicing (ZATCA) <localizations/saudi-arabia/zatca>`: integration "
 "for electronic invoicing in line with Saudi Arabian government requirements"
 msgstr ""
+":ref:`Facturación electrónica (ZATCA) <localizations/saudi-arabia/zatca>`: "
+"Integración para facturación electrónica según los requisitos del gobierno "
+"de Arabia Saudita."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:75
 msgid ""
 "The Saudi Arabian localization includes preconfigured sales, purchase, and "
 "withholding :doc:`taxes <../accounting/taxes>`:"
 msgstr ""
+"La localización de Arabia Saudita incluye :doc:`impuestos <../accounting/"
+"taxes>` de venta, compra y retención preconfigurados:"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:0
 msgid ""
 "Standard VAT (15%): The prevailing rate applied to the majority of goods and "
 "services supplied within the Kingdom."
 msgstr ""
+"IVA estándar (15%): La tasa vigente que se aplica a la mayoría de los bienes "
+"y servicios que se suministran dentro del Reino de Arabia Saudita."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:0
 msgid ""
 "The supplier charges 15% VAT on the sale (Output VAT) and is generally "
 "entitled to deduct the VAT paid on its business purchases (Input VAT)."
 msgstr ""
+"El proveedor cobra un 15% de IVA en la venta (IVA repercutido) y, por lo "
+"general, puede deducir el IVA que paga en sus compras empresariales "
+"(IVA soportado)."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:84
 msgid ""
 "Most commercial sales, retail goods, telecommunication services, non-exempt "
 "private education, and non-exempt private healthcare."
 msgstr ""
+"La mayoría de las ventas comerciales, bienes minoristas, servicios de "
+"telecomunicaciones, educación privada no exenta y atención médica privada no "
+"exenta."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:0
 msgid ""
 "Zero-rated VAT (0%): These are taxable supplies where the rate of tax "
 "applied is 0%."
 msgstr ""
+"IVA con tasa cero (0%): Estos son suministros gravados donde la tasa "
+"aplicada es del 0%."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:0
 msgid ""
 "The supplier charges no VAT on the sale, but, critically, is fully entitled "
 "to recover the input VAT paid on costs related to making those supplies."
 msgstr ""
+"El proveedor no cobra IVA en la venta, pero tiene completo derecho a "
+"recuperar el IVA soportado que paga en los costos relacionados con esos "
+"suministros."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:92
 msgid ""
 "Exports: Supplies of goods and services to a non-:abbr:`GCC (Gulf "
 "Cooperation Council)` resident or for consumption outside the Kingdom."
 msgstr ""
+"Exportaciones: Suministros de bienes y servicios a un residente fuera del "
+":abbr:`GCC (Consejo de Cooperación del Golfo)` o para consumo fuera del "
+"Reino de Arabia Saudita."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:94
 msgid ""
 "International transport: Services for the international transport of "
 "passengers and goods, and related services."
 msgstr ""
+"Transporte internacional: Servicios de transporte internacional de pasajeros "
+"y bienes, y servicios relacionados."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:96
 msgid ""
 "Specific goods: Supplies of qualifying medicines and qualifying medical "
 "equipment, as specified by ZATCA/Ministry of Health."
 msgstr ""
+"Bienes específicos: Suministros de medicamentos y equipos médicos que "
+"califican, según lo que define ZATCA y el Ministerio de Salud."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:98
 msgid ""
@@ -70746,18 +70840,25 @@ msgid ""
 "a Saudi citizen, up to a value of SAR 1,000,000 (subject to specific "
 "conditions)."
 msgstr ""
+"Propiedad residencial: Primer suministro de un edificio o propiedad "
+"residencial nueva a un ciudadano saudí, hasta un valor de 1,000,000 riyales "
+"(sujeto a condiciones específicas)."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:100
 msgid ""
 "Investment metals: Qualifying gold, silver, and platinum of 99% purity or "
 "higher (supplied for investment)."
 msgstr ""
+"Metales de inversión: Oro, plata y platino que califican, con una pureza del "
+"99% o superior (suministrados para inversión)."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:0
 msgid ""
 "Exempt transactions: These transactions fall outside the scope of VAT, "
 "meaning they are not subject to the tax."
 msgstr ""
+"Transacciones exentas: Estas transacciones quedan fuera del alcance del IVA, "
+"por lo que no están sujetas al impuesto."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:0
 msgid ""
@@ -70765,6 +70866,9 @@ msgid ""
 "recover the input VAT paid on costs related to making these supplies "
 "(resulting in an unrecoverable cost)."
 msgstr ""
+"El proveedor no cobra IVA en la venta y no puede recuperar el IVA soportado "
+"que paga en los costos relacionados con estos suministros "
+"(lo que genera un costo no recuperable)."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:109
 msgid ""
@@ -70772,22 +70876,29 @@ msgid ""
 "current/deposit/savings accounts, issuance or transfer of money or "
 "securities, and life insurance."
 msgstr ""
+"Servicios financieros: Intereses sobre préstamos, otorgamiento de crédito, "
+"operaciones de cuentas corrientes, de depósito o de ahorro, emisión o "
+"transferencia de dinero o valores, y seguros de vida."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:112
 msgid "Real estate: bare rental (leasing) of residential property."
-msgstr ""
+msgstr "Bienes raíces: Alquiler simple de propiedad residencial."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:0
 msgid ""
 "Import VAT: VAT is levied on goods brought into the Kingdom from a "
 "non-:abbr:`GCC (Gulf Cooperation Council)` country."
 msgstr ""
+"IVA de importación: El IVA se aplica a los bienes que ingresan al Reino "
+"desde un país fuera del :abbr:`GCC (Consejo de Cooperación del Golfo)`."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:0
 msgid ""
 "VAT is typically calculated at the standard rate (15%) and is paid to the "
 "Customs Authority at the point of importation."
 msgstr ""
+"El IVA se calcula, por lo general, a la tasa estándar (del 15%) y se paga a "
+"la Autoridad de Aduanas en el momento de la importación."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:120
 msgid ""
@@ -70795,10 +70906,13 @@ msgid ""
 "discounts>` to invoices, assign a 15% tax on the line containing a global "
 "discount to comply with ZATCA rules."
 msgstr ""
+"Al asignar :doc:`descuentos <../../sales/sales/products_prices/prices/"
+"discounts>` a las facturas, asigna un impuesto del 15% a la línea que "
+"contiene un descuento global para cumplir con las normas de ZATCA."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:124
 msgid "Reverse charge mechanism (RCM)"
-msgstr ""
+msgstr "Mecanismo de inversión del sujeto pasivo (RCM)"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:126
 msgid ""
@@ -70806,6 +70920,9 @@ msgid ""
 "from the non-resident supplier to the resident recipient of the goods or "
 "services."
 msgstr ""
+"Descripción: Mecanismo que traslada la responsabilidad de contabilizar el "
+"IVA del proveedor no residente al receptor residente de los bienes o "
+"servicios."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:128
 msgid ""
@@ -70814,18 +70931,27 @@ msgid ""
 "tax-returns/vat-report>`. This typically results in a net zero effect on the "
 "VAT return, provided the input tax is fully deductible."
 msgstr ""
+"Mecanismo: El receptor registrado en IVA debe calcular y contabilizar el IVA "
+"(como IVA repercutido y como IVA soportado) en su :ref:`declaración de IVA <"
+"accounting/tax-returns/vat-report>`. Esto suele generar un efecto neto cero "
+"en la declaración de IVA, siempre que el impuesto soportado sea totalmente "
+"deducible."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:131
 msgid ""
 "Application: Primarily used for B2B supplies of services from a non-resident "
 "supplier to a VAT-registered business in Saudi Arabia."
 msgstr ""
+"Uso: Se usa, sobre todo, para suministros B2B de servicios de un proveedor "
+"no residente a una empresa registrada en Arabia Saudita."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:139
 msgid ""
 "There are two available methods for calculating withholding tax: gross and "
 "deducted."
 msgstr ""
+"Existen dos métodos disponibles para calcular la retención de impuestos: "
+"bruto y deducido."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:141
 msgid ""
@@ -70834,6 +70960,10 @@ msgid ""
 "total bill is entered as 115 SAR, the system calculates the base plus "
 "Withholding Tax (WHT) without reducing the payment amount."
 msgstr ""
+"Retención bruta: Esta es la configuración principal, donde el importe de la "
+"retención se calcula además del total de la factura. Por ejemplo, si "
+"ingresas un total de factura de 115 riyales, el sistema calcula la base más "
+"la retención sin reducir el importe del pago."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:144
 msgid ""
@@ -70842,6 +70972,10 @@ msgid ""
 "This affects how the accounting entries and payable lines are booked, as "
 "seen in the comparison screenshots provided."
 msgstr ""
+"Retención deducida: Reduce el importe a pagar por el monto de la retención "
+"de forma directa, por lo que el pago total refleja la deducción desde el "
+"inicio. Esto afecta cómo se registran los asientos contables y las líneas "
+"por pagar, como muestran las capturas comparativas."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:149
 msgid ""
@@ -70849,12 +70983,17 @@ msgid ""
 "Accounting --> Configuration --> Taxes and enable the relevant withholding "
 "tax."
 msgstr ""
+"Las retenciones deducidas no vienen habilitadas de forma predeterminada. "
+"Para activarlas, ve a :menuselection:`Contabilidad --> Configuración --> "
+"Impuestos` y habilita el impuesto de retención correspondiente."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:152
 msgid ""
 "The following Withholding Tax (WHT) configurations are preloaded and "
 "available for use:"
 msgstr ""
+"Las siguientes configuraciones de retención de impuestos (WHT) vienen "
+"precargadas y están disponibles:"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:154
 msgid ""
@@ -70862,18 +71001,25 @@ msgid ""
 "consulting services, air and maritime freight, as well as interest, "
 "insurance, and reinsurance premiums."
 msgstr ""
+"Retención del 5%: Aplica a pagos por alquiler, dividendos, servicios "
+"técnicos y de consultoría, flete aéreo y marítimo, así como a primas de "
+"intereses, seguros y reaseguros."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:156
 msgid ""
 "15% Withholding Tax: Applies to royalties and other general service payments "
 "made to non-residents."
 msgstr ""
+"Retención del 15%: Aplica a regalías y otros pagos generales por servicios a "
+"no residentes."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:158
 msgid ""
 "20% Withholding Tax: Reserved for management fees and specific high-value "
 "service payments."
 msgstr ""
+"Retención del 20%: Reservada para honorarios de gestión y pagos por "
+"servicios específicos de alto valor."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:165
 msgid ""
@@ -70884,6 +71030,12 @@ msgid ""
 "against other periods, and exported in Excel and PDF formats, ensuring "
 "compliance with Saudi Arabia tax laws."
 msgstr ""
+"Los reportes :ref:`de IVA y de retención <accounting/tax-returns/vat-report>`"
+" ofrecen un desglose detallado de las transacciones gravadas, con tasa cero, "
+"exentas y con retención. Como otros reportes financieros, los de "
+":guilabel:`IVA` y :guilabel:`declaración de retención` permiten filtrar por "
+"periodo, comparar con otros periodos y exportar en formatos Excel y PDF, lo "
+"que garantiza el cumplimiento de las leyes fiscales de Arabia Saudita."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:176
 msgid ""
@@ -70891,10 +71043,15 @@ msgid ""
 "zatca>`, the following fields are required on the :ref:`company record "
 "<general/companies/company>`:"
 msgstr ""
+"Los siguientes campos deben estar completos en el :ref:`registro de la "
+"empresa <general/companies/company>` para poder garantizar una integración "
+"correcta con :ref:`ZATCA <localizations/saudi-arabia/zatca>`:"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:179
 msgid ":guilabel:`Company Name` (must match exactly VAT certificate)"
 msgstr ""
+":guilabel:`Nombre de la empresa` "
+"(debe coincidir de forma exacta con el certificado fiscal)"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:180
 msgid ""
@@ -70902,48 +71059,53 @@ msgid ""
 "the :guilabel:`District`, :guilabel:`Building Number`, and :guilabel:`Plot "
 "Identification`"
 msgstr ""
+"Todos los campos relevantes de :guilabel:`dirección`, que incluyen "
+":guilabel:`Distrito`, :guilabel:`Número de edificio` e :guilabel:`"
+"Identificación del lote`"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:182
 msgid ":guilabel:`Identification Scheme`"
-msgstr ""
+msgstr ":guilabel:`Esquema de identificación`"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:184
 msgid ":guilabel:`Tax Identification Number`"
-msgstr ""
+msgstr ":guilabel:`Número de identificación fiscal`"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:185
 msgid ":guilabel:`Commercial Registration Number`"
-msgstr ""
+msgstr ":guilabel:`Número de registro comercial`"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:186
 msgid ":guilabel:`Momra License`"
-msgstr ""
+msgstr ":guilabel:`Licencia Momra`"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:187
 msgid ":guilabel:`MLSD License`"
-msgstr ""
+msgstr ":guilabel:`Licencia MLSD`"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:188
 msgid ":guilabel:`700 Number`"
-msgstr ""
+msgstr ":guilabel:`Número 700`"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:189
 msgid ":guilabel:`Sagia License`"
-msgstr ""
+msgstr ":guilabel:`Licencia Sagia`"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:191
 msgid ":guilabel:`VAT Number`"
-msgstr ""
+msgstr ":guilabel:`Número de IVA`"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:192
 msgid ":guilabel:`Currency` must be set to :guilabel:`SAR`."
-msgstr ""
+msgstr "La :guilabel:`moneda` debe ser :guilabel:`SAR`."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:195
 msgid ""
 "All fields must be completed accurately to avoid rejection "
 "during :ref:`ZATCA onboarding <localizations/saudi-arabia/zatca>`."
 msgstr ""
+"Completa todos los campos de forma correcta para evitar rechazos durante el "
+":ref:`proceso de alta en ZATCA <localizations/saudi-arabia/zatca>`."
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:199
 msgid ""
@@ -70953,7 +71115,7 @@ msgstr ""
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:204
 msgid "Branches configuration"
-msgstr ""
+msgstr "Configuración de sucursales"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:206
 msgid ""
@@ -71212,7 +71374,7 @@ msgstr ""
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:350
 msgid "Production"
-msgstr ""
+msgstr "Producción"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:0
 msgid "In your Live/Production database"
@@ -71517,7 +71679,7 @@ msgstr ""
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:512
 msgid "Retention"
-msgstr ""
+msgstr "Retención"
 
 #: ../../content/applications/finance/fiscal_localizations/saudi_arabia.rst:514
 msgid ""
