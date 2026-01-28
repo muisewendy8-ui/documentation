@@ -20,14 +20,12 @@ bar, the :guilabel:`To Approve` and :guilabel:`Active Employees`.
 
 Each attendance record displays the following information:
 
-- :guilabel:`Employee`: the name of the employee
-- :guilabel:`Check In`: the date and time the employee checked in
-- :guilabel:`Check Out`: the date and time the employee checked out
-- :guilabel:`Worked Time`: the number of worked hours the employee logged
-- :guilabel:`Worked Extra Hours`: the amount of overtime worked
-- :guilabel:`Extra Hours`: the total extra hours logged
-- :guilabel:`Overtime Status`: the status of the attendance record. All attendance records that
-  appear on this dashboard have a status of :guilabel:`To Approve`.
+- :guilabel:`Employee`: The name of the employee.
+- :guilabel:`Check In`: The date and time the employee checked in.
+- :guilabel:`Check Out`: The date and time the employee checked out.
+- :guilabel:`Worked Time`: The number of worked hours the employee logged.
+- :guilabel:`Worked Extra Hours`: The amount of overtime worked.
+- :guilabel:`Extra Hours`: The total extra hours logged.
 
 .. image:: management/management-dashboard.png
    :alt: The Attendances app Management dashboard, displaying entries needing approval.
@@ -85,12 +83,12 @@ Once overtime hours are partially approved, the status changes to :guilabel:`App
 
    The possible options are:
 
-   - :guilabel:`Kiosk`: the employee physically checked in or out using a :doc:`kiosk <kiosks>`
+   - :guilabel:`Kiosk`: The employee physically checked in or out using a :doc:`kiosk <kiosks>`
      device. The employee was present at the kiosk to check-in.
-   - :guilabel:`Systray`: the employee checked in or out :doc:`directly from the database
+   - :guilabel:`Systray`: The employee checked in or out :doc:`directly from the database
      <check_in_check_out>`. Depending on the :guilabel:`IP Address` displayed on the detailed
      attendance record, the employee's location at the time of check-in can be determined.
-   - :guilabel:`Manual`: the record was created manually in the **Attendances** app. This is
+   - :guilabel:`Manual`: The record was created manually in the **Attendances** app. This is
      typically done by management, to add a missing record.
 
 .. _attendances/create-records:
@@ -103,21 +101,19 @@ create attendance records manually in the **Attendances** app. Some situations r
 when employees forget to check in and out for shifts, as employees cannot retroactively create
 attendance records.
 
-To add a missing attendance record, navigate to :menuselection:`Attendances app --> Overview`. Click
-the :guilabel:`New` button in the upper-left corner. In the :guilabel:`Create` pop-up window, enter
-the following information on the form:
+To add a missing attendance record, navigate to :menuselection:`Attendances app --> Overview -->
+Dashboard`. Click the :guilabel:`New` button in the upper-left corner. In the *Create* pop-up
+window, enter the following information on the form, then click :guilabel:`Save & Close`:
 
-- :guilabel:`Employee`: select the employee the record is being created for. The signed-in user
+- :guilabel:`Employee`: Select the employee the record is being created for. The signed-in user
   populates this field, by default.
-- :guilabel:`Check In`: using the calendar modal, select the check in date and time, then click
-  :icon:`fa-check` :guilabel:`Apply`. By default, the current date is selected, and the time is set
-  to `00:00:00`.
-- :guilabel:`Check Out`: using the calendar modal, select the check out date and time, then click
-  :icon:`fa-check` :guilabel:`Apply`. By default, the following date is selected, and the time is
-  set to `00:00:00`.
-- :guilabel:`Worked Time`: this field is automatically populated with the difference from the
+- :guilabel:`Check In`: Using the calendar modal, select the check in date and time, then click
+  :guilabel:`Apply`. By default, the current date is selected, and the time is set to `12:00:AM`.
+- :guilabel:`Check Out`: Using the calendar modal, select the check out date and time, then click
+  :guilabel:`Apply`. By default, the following date is selected, and the time is set to `12:00:AM`.
+- :guilabel:`Worked Time`: This field is automatically populated with the difference from the
   selected :guilabel:`Check In` and :guilabel:`Check Out` times. This field **cannot** be modified.
-- :guilabel:`Extra Hours`: enter the number of overtime hours, if any, to be approved.
+- :guilabel:`Extra Hours`: Enter the number of overtime hours, if any, to be approved.
 
 .. important::
    Once :guilabel:`Extra Hours` are added, they are automatically approved by the system. However,
