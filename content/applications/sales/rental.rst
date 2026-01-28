@@ -7,7 +7,7 @@ Rental
 The Odoo **Rental** application provides comprehensive solutions for configuring and managing
 rentals.
 
-Send quotations, confirm orders, schedule rentals, register products upon pickedup and returned, and
+Send quotations, confirm orders, schedule rentals, register products at the time of pickup and return, and
 invoice customers from a single platform.
 
 .. seealso::
@@ -73,9 +73,15 @@ Odoo uses two rules to compute the price of a product when a rental order is cre
    customer pays three times the '3 days' rate to cover eight days, totaling $750.
 
    .. math::
-      3~\text{days} + 3~\text{days} + 3~\text{days} = 9~\text{days}
+      1~\text{day} * 8 &= 8~\text{days} \\
+      3~\text{days} + 3~\text{days} + 3~\text{days} &= 9~\text{days} \\
+      1~\text{week} + 1~\text{week} &= 14~\text{days} \\
+      \\
+      100 * 8 &= $800 \\
+      250 + 250 + 250 &= $750 \\
+      500 + 500 &= $1000
 
-      250 + 250 + 250 = $750
+   Therefore, the customer pays $750 for the eight-day rental period.
 
 .. toctree::
    rental/products
